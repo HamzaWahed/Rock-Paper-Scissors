@@ -17,6 +17,10 @@ function playRound(playerSelection, computerSelection){
     }
 }
 
-const playerSelection = "rock";
-const computerSelection = computerPlay();
-console.log(playRound(playerSelection,computerSelection));
+function game(){
+    for(let i=0;i<5;i++){
+        playerSelection = prompt("Your choice");
+        computerSelection = computerPlay();
+        console.log(playRound(playerSelection,computerSelection));
+    }
+}
