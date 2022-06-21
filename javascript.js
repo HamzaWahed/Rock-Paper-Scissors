@@ -11,8 +11,12 @@ function playRound(playerSelection, computerSelection){
     if((computerChoice===options[0] && playerChoice===options[2])
     || (computerChoice===options[1] && playerChoice===options[0])
     || (computerChoice===options[2] && playerChoice===options[1])){
-        console.log("You Lose! " + computerChoice + " beats " + playerChoice);
+        return ("You Lose! " + computerChoice + " beats " + playerChoice);
     }else{
-        console.log("You Win! " + playerChoice + " beats " + computerChoice);
+        return ("You Win! " + playerChoice + " beats " + computerChoice);
     }
 }
+
+const playerSelection = "rock";
+const computerSelection = computerPlay();
+console.log(playRound(playerSelection,computerSelection));
